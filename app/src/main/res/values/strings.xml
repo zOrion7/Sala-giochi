@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name" translatable="false">Sala Giochi</string>
+    <string name="Gioco1" translatable="false">Flappy Planet</string>
+    <string name="Gioco2" translatable="false">Meteor Dodge</string>
+    <string name="Gioco3" translatable="false">Space Shooter</string>
+    <string name="Gioco4" translatable="false">Breakout</string>
+    <string name="game_over" translatable="false">Game Over</string>
+
+    // TRANSLATABLE
+    <string name="Welcome">Benvenuto,</string>
+    <string name="AvviaPartita">Avvia</string>
+    <string name="Classifica">Classifica</string>
+    <string name="Risposta_sensore">Risposta del Sensore</string>
+    <string name="Pagina_principale">Pagina principale</string>
+    <string name="Riprova">Riprova</string>
+    <string name="Text">Tocca per saltare!</string>
+    <string name="messaggio_toast">Premi di nuovo per uscire</string>
+    <string name="NicknameEditText">Inserisci Nickname</string>
+    <string name="NicknameError">Nickname non disponibile</string>
+    <string name="Internet">Connessione a internet richiesta per salvare i dati online</string>
+    <string name="Punteggio">Punteggio : </string>
+    <string name="Livello">LIVELLO :  </string>
+    <string name="ClassificaGlobale">CLASSIFICA GLOBALE</string>
+</resources>

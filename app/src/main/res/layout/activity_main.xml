@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/android_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@color/backgroundApp" />
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/gameTitleNeonEffect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        style="@style/gameTitleNeonEffect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"/>
+
+    <EditText
+        android:id="@+id/idNickEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textView4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:autofillHints=""
+        android:fontFamily="@font/neon_font"
+        android:gravity="center"
+        android:hint="@string/NicknameEditText"
+        android:inputType="text"
+        android:textColor="@color/myColor1"
+        android:textColorHint="@color/myColor2"
+        android:textSize="21sp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/neon_font"
+        android:gravity="center"
+        android:text="@string/Welcome"
+        android:textColor="@color/myColor1"
+        android:textSize="21sp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/idButtonGioco1"
+        style="@style/customButtonText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/idNickEditText"
+        android:layout_marginTop="30dp"
+        android:onClick="ActivityGioco1"
+        android:paddingHorizontal="20dp"
+        android:text="@string/Gioco1"
+        app:rippleColor="@color/buttonPart2" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/idButtonGioco2"
+        style="@style/customButtonText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/idButtonGioco1"
+        android:layout_alignStart="@+id/idButtonGioco1"
+        android:layout_alignEnd="@+id/idButtonGioco1"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="0dp"
+        android:text="@string/Gioco2"
+        app:rippleColor="@color/buttonPart2" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/idButtonGioco3"
+        style="@style/customButtonText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/idButtonGioco2"
+        android:layout_alignStart="@+id/idButtonGioco2"
+        android:layout_alignEnd="@+id/idButtonGioco2"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="0dp"
+        android:text="@string/Gioco3"
+        app:rippleColor="@color/buttonPart2" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/idButtonGioco4"
+        style="@style/customButtonText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/idButtonGioco3"
+        android:layout_alignStart="@+id/idButtonGioco3"
+        android:layout_alignEnd="@+id/idButtonGioco3"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="0dp"
+        android:text="@string/Gioco4"
+        app:rippleColor="@color/buttonPart2" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/idButtonClassifica"
+        style="@style/customButtonText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/idButtonGioco4"
+        android:layout_marginTop="30dp"
+        android:text="@string/Classifica"
+        app:rippleColor="@color/buttonPart2" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="1dp"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/space" />
+
+</RelativeLayout>

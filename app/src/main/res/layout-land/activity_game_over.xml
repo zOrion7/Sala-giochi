@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundApp"
+    tools:context=".ActivityCondivise.GameOver">
+
+    <TextView
+        android:id="@+id/textViewPunteggio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonRiprova"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:fontFamily="@font/neon_font"
+        android:text="@string/Punteggio"
+        android:textColor="@color/myColor1"
+        android:textSize="39sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonRiprova"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/neon_font"
+        android:onClick="onRestart"
+        android:text="@string/Riprova"
+        android:textColor="@color/myColor1"
+        android:textSize="21sp"
+        app:background="@color/Transparent"
+        app:cornerRadius="5dp"
+        app:rippleColor="@color/buttonPart1"
+        app:strokeColor="@color/myColor1"
+        app:strokeWidth="2dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonHomepage"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonRiprova"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/buttonRiprova"
+        android:fontFamily="@font/neon_font"
+        android:onClick="onMenu"
+        android:text="@string/Pagina_principale"
+        android:textColor="@color/myColor1"
+        android:textSize="21sp"
+        app:background="@color/Transparent"
+        app:cornerRadius="5dp"
+        app:rippleColor="@color/buttonPart1"
+        app:strokeColor="@color/myColor1"
+        app:strokeWidth="2dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonClassifica"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonRiprova"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_toStartOf="@+id/buttonRiprova"
+        android:fontFamily="@font/neon_font"
+        android:onClick="onScoreboard"
+        android:paddingHorizontal="10dp"
+        android:text="@string/Classifica"
+        android:textColor="@color/myColor1"
+        android:textSize="21sp"
+        app:background="@color/Transparent"
+        app:cornerRadius="5dp"
+        app:rippleColor="@color/buttonPart1"
+        app:strokeColor="@color/myColor1"
+        app:strokeWidth="2dp" />
+</RelativeLayout>

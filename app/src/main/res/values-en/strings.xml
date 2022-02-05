@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="Welcome">Welcome,</string>
+    <string name="AvviaPartita">Play</string>
+    <string name="Classifica">Scoreboard</string>
+    <string name="Risposta_sensore">Sensor Response</string>
+    <string name="Pagina_principale">Homepage</string>
+    <string name="Riprova">Retry</string>
+    <string name="Text">Tap to jump!</string>
+    <string name="messaggio_toast">Press again to exit</string>
+    <string name="NicknameEditText">Insert Nickname</string>
+    <string name="NicknameError">Nickname not available</string>
+    <string name="Internet">Internet required to save data on the server</string>
+    <string name="Punteggio">Score : </string>
+    <string name="Livello">LEVEL :</string>
+    <string name="ClassificaGlobale">GLOBAL SCOREBOARD</string>
+</resources>

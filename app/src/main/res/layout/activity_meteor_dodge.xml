@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_meteor_dodge"
+    tools:context=".MeteorDodge.MeteorDodgeMain">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/spaceman_info"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:contentDescription="@string/Gioco2" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="130dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginBottom="200dp"
+        android:contentDescription="@string/Gioco2"
+        android:src="@drawable/text_here"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+        app:layout_constraintStart_toStartOf="@+id/imageView4" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="90dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="4dp"
+        android:fontFamily="monospace"
+        android:text="@string/Text"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView6"
+        app:layout_constraintEnd_toEndOf="@+id/imageView6"
+        app:layout_constraintStart_toStartOf="@+id/imageView6"
+        app:layout_constraintTop_toTopOf="@+id/imageView6" />
+
+    <TextView
+        android:id="@+id/textViewTitolo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/neon_font"
+        android:text="@string/Gioco2"
+        android:textColor="@color/myColor1"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonRiprova"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/neon_font"
+        android:text="@string/AvviaPartita"
+        android:textColor="@color/myColor1"
+        android:textSize="21sp"
+        app:background="@color/Transparent"
+        app:cornerRadius="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/textViewTitolo"
+        app:layout_constraintStart_toStartOf="@+id/textViewTitolo"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitolo"
+        app:rippleColor="@color/buttonPart1"
+        app:strokeColor="@color/myColor1"
+        app:strokeWidth="2dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonHomepage"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/neon_font"
+        android:text="@string/Classifica"
+        android:textColor="@color/myColor1"
+        android:textSize="21sp"
+        app:background="@color/Transparent"
+        app:cornerRadius="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/textViewTitolo"
+        app:layout_constraintStart_toStartOf="@+id/textViewTitolo"
+        app:layout_constraintTop_toBottomOf="@+id/buttonRiprova"
+        app:rippleColor="@color/buttonPart1"
+        app:strokeColor="@color/myColor1"
+        app:strokeWidth="2dp" />
+
+    <TextView
+        android:id="@+id/textViewPunteggio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/neon_font"
+        android:text="@string/Risposta_sensore"
+        android:textColor="@color/myColor1"
+        android:textSize="21sp"
+        app:layout_constraintEnd_toEndOf="@+id/textViewTitolo"
+        app:layout_constraintStart_toStartOf="@+id/textViewTitolo"
+        app:layout_constraintTop_toBottomOf="@+id/buttonHomepage" />
+
+    <SeekBar
+        android:id="@+id/seekBarSensore"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="35dp"
+        android:background="@drawable/custom_button"
+        android:max="10"
+        android:min="0"
+        android:progress="5"
+        android:progressTint="@color/myColor1"
+        android:thumbTint="@color/buttonPart2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textViewPunteggio"
+        app:layout_constraintStart_toStartOf="@+id/textViewPunteggio"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPunteggio" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
